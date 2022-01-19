@@ -99,7 +99,7 @@ jobs:
       # specified here.
       - name: Export Coverity Results to SARIF (Full)
         run: |
-          node $COVERITY_HOME/SARIF/cov-format-     sarif-for-github.js \
+          node $COVERITY_HOME/SARIF/cov-format-sarif-for-github.js \
             --inputFile coverity-full-results.json \
             --repoName $GITHUB_REPOSITORY \
             --checkoutPath $GITHUB_REPOSITORY `pwd` $GITHUB_SHA \
